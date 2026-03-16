@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/delivery.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { DeliveryToolbar } from '../../features/client-dashboard/delivery/delivery-toolbar'
-import { DeliveryOverview } from '../../features/client-dashboard/delivery/delivery-overview'
-import { ShipmentList } from '../../features/client-dashboard/delivery/shipment-list'
-import { TrackingSystem } from '../../features/client-dashboard/delivery/tracking-system'
-import { CourierPartnerInfo } from '../../features/client-dashboard/delivery/courier-partner-info'
-import { DeliveryFilters } from '../../features/client-dashboard/delivery/delivery-filters'
-import { DeliveryIssues } from '../../features/client-dashboard/delivery/delivery-issues'
-import { ShipOrderPanel } from '../../features/client-dashboard/delivery/ship-order-panel'
+import '../../../client-dashboard/styles/delivery.module.css'
+import { dashboardData } from '../../data'
+import { DeliveryToolbar } from '../../delivery/delivery-toolbar'
+import { DeliveryOverview } from '../../delivery/delivery-overview'
+import { ShipmentList } from '../../delivery/shipment-list'
+import { TrackingSystem } from '../../delivery/tracking-system'
+import { CourierPartnerInfo } from '../../delivery/courier-partner-info'
+import { DeliveryFilters } from '../../delivery/delivery-filters'
+import { DeliveryIssues } from '../../delivery/delivery-issues'
+import { ShipOrderPanel } from '../../delivery/ship-order-panel'
 
 export function DeliveryPage() {
   const { delivery } = dashboardData

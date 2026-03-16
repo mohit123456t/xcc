@@ -1,8 +1,8 @@
-import '../StaffDashboard/StaffDashboardPage.module.css'
-import { adminPanelData } from '../../features/admin-panel/data'
-import { PaymentsToolbar } from '../../features/admin-panel/payments/payments-toolbar'
-import { PaymentsStatStrip } from '../../features/admin-panel/payments/payments-stat-strip'
-import { PaymentsTable } from '../../features/admin-panel/payments/payments-table'
+import '../../../staff-dashboard/pages/StaffDashboard/StaffDashboardPage.module.css'
+import { adminPanelData } from '../../data'
+import { PaymentsToolbar } from '../../payments/payments-toolbar'
+import { PaymentsStatStrip } from '../../payments/payments-stat-strip'
+import { PaymentsTable } from '../../payments/payments-table'
 
 export function AdminPaymentsPage() {
   const page = adminPanelData.paymentsPage

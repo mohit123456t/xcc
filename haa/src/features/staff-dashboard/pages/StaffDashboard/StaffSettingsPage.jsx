@@ -1,9 +1,9 @@
-import '../../features/client-dashboard/styles/settings.module.css'
+import '../../../client-dashboard/styles/settings.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffSettingsToolbar } from '../../features/staff-dashboard/settings/staff-settings-toolbar'
-import { SettingsInfoPanel } from '../../features/staff-dashboard/settings/settings-info-panel'
-import { ConnectionsPanel } from '../../features/staff-dashboard/settings/connections-panel'
+import { staffDashboardData } from '../../data'
+import { StaffSettingsToolbar } from '../../settings/staff-settings-toolbar'
+import { SettingsInfoPanel } from '../../settings/settings-info-panel'
+import { ConnectionsPanel } from '../../settings/connections-panel'
 
 export function StaffSettingsPage() {
   const page = staffDashboardData.settingsPage

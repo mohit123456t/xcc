@@ -1,90 +1,38 @@
-:global(.dashboard-topbar) {
-  padding: 22px;
-  border-radius: 30px;
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px 0;
 }
 
-:global(.dashboard-overview-pills) {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(120px, 1fr));
-  gap: 14px;
-  width: 100%;
-}
-
-:global(.overview-pill) {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 16px 18px;
-  border-radius: 20px;
-  background:
-    linear-gradient(145deg, rgba(226, 234, 242, 0.86), rgba(197, 208, 222, 0.54));
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  text-align: left;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    0 8px 20px rgba(83, 93, 111, 0.05);
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease;
-}
-
-:global(.overview-pill:hover) {
-  transform: translateY(-3px);
-  box-shadow:
-    0 20px 32px rgba(83, 93, 111, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.34);
-}
-
-:global(.overview-pill-icon) {
-  width: 42px;
-  height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  background:
-    linear-gradient(145deg, rgba(79, 124, 255, 0.26), rgba(255, 255, 255, 0.2));
-  font-size: 1.2rem;
-  animation: liquidDrift 6s ease-in-out infinite;
-}
-
-:global(.overview-pill span) {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 0.82rem;
-  color: var(--dashboard-muted);
-}
-
-:global(.overview-pill strong) {
-  font-size: 1.05rem;
-  color: var(--dashboard-text);
-}
-
-:global(.dashboard-grid) {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 20px;
-}
-
-@media (max-width: 1080px) {
-  :global(.dashboard-topbar) {
-    padding: 20px;
-  }
-
-  :global(.dashboard-overview-pills) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.line-chart {
     width: 100%;
-  }
+    height: 150px;
 }
 
-@media (max-width: 720px) {
-  :global(.dashboard-topbar) {
-    padding: 20px;
-    border-radius: 24px;
-  }
+.chart-labels {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    color: var(--dashboard-muted);
+    margin-top: 10px;
+}
 
-  :global(.dashboard-overview-pills),
-  :global(.dashboard-grid) {
-    grid-template-columns: 1fr;
-  }
+.chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.chart-bar {
+    width: 30px;
+    background: linear-gradient(135deg, #4f7cff, #7eb6ff);
+    border-radius: 6px;
+    transition: height 0.5s ease-in-out;
+}
+
+.chart-label {
+    font-size: 12px;
+    color: var(--dashboard-muted);
 }

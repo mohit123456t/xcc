@@ -1,10 +1,10 @@
-import '../../features/client-dashboard/styles/products.module.css'
+import '../../../client-dashboard/styles/products.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffProductsToolbar } from '../../features/staff-dashboard/products/staff-products-toolbar'
-import { StaffProductsOverview } from '../../features/staff-dashboard/products/staff-products-overview'
-import { StaffProductsTable } from '../../features/staff-dashboard/products/staff-products-table'
-import { ProductActionsPanel } from '../../features/staff-dashboard/products/product-actions-panel'
+import { staffDashboardData } from '../../data'
+import { StaffProductsToolbar } from '../../products/staff-products-toolbar'
+import { StaffProductsOverview } from '../../products/staff-products-overview'
+import { StaffProductsTable } from '../../products/staff-products-table'
+import { ProductActionsPanel } from '../../products/product-actions-panel'
 
 export function StaffProductsPage() {
   const page = staffDashboardData.productsPage

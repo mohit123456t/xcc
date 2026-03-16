@@ -1,10 +1,10 @@
-import '../../features/client-dashboard/styles/social-media.module.css'
+import '../../../client-dashboard/styles/social-media.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffSocialMediaToolbar } from '../../features/staff-dashboard/social-media/staff-social-media-toolbar'
-import { StaffSocialOverview } from '../../features/staff-dashboard/social-media/staff-social-overview'
-import { StaffPostsPanel } from '../../features/staff-dashboard/social-media/staff-posts-panel'
-import { SocialGrowthPanel } from '../../features/staff-dashboard/social-media/social-growth-panel'
+import { staffDashboardData } from '../../data'
+import { StaffSocialMediaToolbar } from '../../social-media/staff-social-media-toolbar'
+import { StaffSocialOverview } from '../../social-media/staff-social-overview'
+import { StaffPostsPanel } from '../../social-media/staff-posts-panel'
+import { SocialGrowthPanel } from '../../social-media/social-growth-panel'
 
 export function StaffSocialMediaPage() {
   const page = staffDashboardData.socialMediaPageStaff

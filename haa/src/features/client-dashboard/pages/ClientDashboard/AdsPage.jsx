@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/ads.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { AdsToolbar } from '../../features/client-dashboard/ads/ads-toolbar'
-import { AdsOverview } from '../../features/client-dashboard/ads/ads-overview'
-import { AdsCampaignList } from '../../features/client-dashboard/ads/ads-campaign-list'
-import { AudienceTargeting } from '../../features/client-dashboard/ads/audience-targeting'
-import { AdsPerformanceGraph } from '../../features/client-dashboard/ads/ads-performance-graph'
-import { AdCreatives } from '../../features/client-dashboard/ads/ad-creatives'
-import { CampaignControls } from '../../features/client-dashboard/ads/campaign-controls'
-import { CreateAdCampaignForm } from '../../features/client-dashboard/ads/create-ad-campaign-form'
+import '../../../client-dashboard/styles/ads.module.css'
+import { dashboardData } from '../../data'
+import { AdsToolbar } from '../../ads/ads-toolbar'
+import { AdsOverview } from '../../ads/ads-overview'
+import { AdsCampaignList } from '../../ads/ads-campaign-list'
+import { AudienceTargeting } from '../../ads/audience-targeting'
+import { AdsPerformanceGraph } from '../../ads/ads-performance-graph'
+import { AdCreatives } from '../../ads/ad-creatives'
+import { CampaignControls } from '../../ads/campaign-controls'
+import { CreateAdCampaignForm } from '../../ads/create-ad-campaign-form'
 
 export function AdsPage() {
   const { ads } = dashboardData

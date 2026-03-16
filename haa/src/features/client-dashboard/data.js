@@ -13,10 +13,17 @@ export const dashboardData = {
     { label: 'Social', path: '/dashboard/social-media', icon: '📱' },
   ],
   header: {
-    pills: [
-      { label: 'Store Health', value: 'Strong', icon: '🏬' },
-      { label: 'Response Time', value: '12 min', icon: '⏱️' },
-      { label: 'Plan Status', value: 'Growth', icon: '⭐' },
+    pills: [],
+  },
+  revenueData: {
+    title: 'Revenue Growth',
+    chartData: [
+      { month: 'Jan', revenue: 65 },
+      { month: 'Feb', revenue: 59 },
+      { month: 'Mar', revenue: 80 },
+      { month: 'Apr', revenue: 81 },
+      { month: 'May', revenue: 56 },
+      { month: 'Jun', revenue: 55 },
     ],
   },
   totalSales: {

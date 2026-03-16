@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import '../../features/client-dashboard/styles/notifications.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { NotificationsToolbar } from '../../features/client-dashboard/notifications/notifications-toolbar'
-import { NewOrderNotificationsPanel } from '../../features/client-dashboard/notifications/new-order-notifications-panel'
-import { MarketingUpdatesPanel } from '../../features/client-dashboard/notifications/marketing-updates-panel'
-import { AdsUpdatesPanel } from '../../features/client-dashboard/notifications/ads-updates-panel'
-import { BillingAlertsPanel } from '../../features/client-dashboard/notifications/billing-alerts-panel'
-import { DeliveryUpdatesPanel } from '../../features/client-dashboard/notifications/delivery-updates-panel'
-import { SupportNotificationsPanel } from '../../features/client-dashboard/notifications/support-notifications-panel'
+import '../../styles/notifications.module.css'
+import { dashboardData } from '../../data'
+import { NotificationsToolbar } from '../../notifications/notifications-toolbar'
+import { NewOrderNotificationsPanel } from '../../notifications/new-order-notifications-panel'
+import { MarketingUpdatesPanel } from '../../notifications/marketing-updates-panel'
+import { AdsUpdatesPanel } from '../../notifications/ads-updates-panel'
+import { BillingAlertsPanel } from '../../notifications/billing-alerts-panel'
+import { DeliveryUpdatesPanel } from '../../notifications/delivery-updates-panel'
+import { SupportNotificationsPanel } from '../../notifications/support-notifications-panel'
 
 export function NotificationsPage() {
   const { notificationsPage } = dashboardData
@@ -16,10 +16,6 @@ export function NotificationsPage() {
   const allGroups = [
     notifications.newOrders,
     notifications.marketing,
-    notifications.ads,
-    notifications.billing,
-    notifications.delivery,
-    notifications.support,
   ]
 
   const unreadCount = allGroups.flat().filter((item) => item.isUnread).length

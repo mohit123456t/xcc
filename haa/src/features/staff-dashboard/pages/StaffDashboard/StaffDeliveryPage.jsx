@@ -1,11 +1,11 @@
-import '../../features/client-dashboard/styles/delivery.module.css'
+import '../../../client-dashboard/styles/delivery.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffDeliveryToolbar } from '../../features/staff-dashboard/delivery/staff-delivery-toolbar'
-import { OrdersReadyToShip } from '../../features/staff-dashboard/delivery/orders-ready-to-ship'
-import { ShiprocketPanel } from '../../features/staff-dashboard/delivery/shiprocket-panel'
-import { TrackingStatusPanel } from '../../features/staff-dashboard/delivery/tracking-status-panel'
-import { DeliveryIssuesPanel } from '../../features/staff-dashboard/delivery/delivery-issues-panel'
+import { staffDashboardData } from '../../data'
+import { StaffDeliveryToolbar } from '../../delivery/staff-delivery-toolbar'
+import { OrdersReadyToShip } from '../../delivery/orders-ready-to-ship'
+import { ShiprocketPanel } from '../../delivery/shiprocket-panel'
+import { TrackingStatusPanel } from '../../delivery/tracking-status-panel'
+import { DeliveryIssuesPanel } from '../../delivery/delivery-issues-panel'
 
 export function StaffDeliveryPage() {
   const page = staffDashboardData.deliveryPage

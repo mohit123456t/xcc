@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import '../../features/client-dashboard/styles/marketing.module.css'
+import '../../../client-dashboard/styles/marketing.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { AssignedBusinessesToolbar } from '../../features/staff-dashboard/assigned-businesses/assigned-businesses-toolbar'
-import { AssignedBusinessesSearch } from '../../features/staff-dashboard/assigned-businesses/assigned-businesses-search'
-import { AssignedBusinessesFilters } from '../../features/staff-dashboard/assigned-businesses/assigned-businesses-filters'
-import { BusinessSummaryCards } from '../../features/staff-dashboard/assigned-businesses/business-summary-cards'
-import { AssignedBusinessesTable } from '../../features/staff-dashboard/assigned-businesses/assigned-businesses-table'
-import { BusinessSummaryList } from '../../features/staff-dashboard/assigned-businesses/business-summary-list'
+import { staffDashboardData } from '../../data'
+import { AssignedBusinessesToolbar } from '../../assigned-businesses/assigned-businesses-toolbar'
+import { AssignedBusinessesSearch } from '../../assigned-businesses/assigned-businesses-search'
+import { AssignedBusinessesFilters } from '../../assigned-businesses/assigned-businesses-filters'
+import { BusinessSummaryCards } from '../../assigned-businesses/business-summary-cards'
+import { AssignedBusinessesTable } from '../../assigned-businesses/assigned-businesses-table'
+import { BusinessSummaryList } from '../../assigned-businesses/business-summary-list'
 
 export function StaffAssignedBusinessesPage() {
   const page = staffDashboardData.assignedBusinessesPage

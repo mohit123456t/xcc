@@ -1,12 +1,12 @@
 import { Navigate, useParams } from 'react-router-dom'
-import '../../features/client-dashboard/styles/marketing.module.css'
+import '../../../client-dashboard/styles/marketing.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { BusinessWorkPanelToolbar } from '../../features/staff-dashboard/business-work-panel/business-work-panel-toolbar'
-import { BusinessProfileCard } from '../../features/staff-dashboard/business-work-panel/business-profile-card'
-import { BusinessWorkstreamCard } from '../../features/staff-dashboard/business-work-panel/business-workstream-card'
-import { ContentUploadsCard } from '../../features/staff-dashboard/business-work-panel/content-uploads-card'
-import { BusinessSummaryStrip } from '../../features/staff-dashboard/business-work-panel/business-summary-strip'
+import { staffDashboardData } from '../../data'
+import { BusinessWorkPanelToolbar } from '../../business-work-panel/business-work-panel-toolbar'
+import { BusinessProfileCard } from '../../business-work-panel/business-profile-card'
+import { BusinessWorkstreamCard } from '../../business-work-panel/business-workstream-card'
+import { ContentUploadsCard } from '../../business-work-panel/content-uploads-card'
+import { BusinessSummaryStrip } from '../../business-work-panel/business-summary-strip'
 
 export function StaffBusinessWorkPanelPage() {
   const { businessId } = useParams()

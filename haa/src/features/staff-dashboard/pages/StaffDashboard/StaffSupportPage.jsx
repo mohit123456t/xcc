@@ -1,11 +1,11 @@
-import '../../features/client-dashboard/styles/support.module.css'
+import '../../../client-dashboard/styles/support.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffSupportToolbar } from '../../features/staff-dashboard/support/staff-support-toolbar'
-import { StaffSupportSummary } from '../../features/staff-dashboard/support/staff-support-summary'
-import { CustomerTicketsPanel } from '../../features/staff-dashboard/support/customer-tickets-panel'
-import { OwnerQueriesPanel } from '../../features/staff-dashboard/support/owner-queries-panel'
-import { ReplyDraftsPanel } from '../../features/staff-dashboard/support/reply-drafts-panel'
+import { staffDashboardData } from '../../data'
+import { StaffSupportToolbar } from '../../support/staff-support-toolbar'
+import { StaffSupportSummary } from '../../support/staff-support-summary'
+import { CustomerTicketsPanel } from '../../support/customer-tickets-panel'
+import { OwnerQueriesPanel } from '../../support/owner-queries-panel'
+import { ReplyDraftsPanel } from '../../support/reply-drafts-panel'
 
 export function StaffSupportPage() {
   const page = staffDashboardData.supportPage

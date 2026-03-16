@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/orders.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { OrderToolbar } from '../../features/client-dashboard/orders/order-toolbar'
-import { OrderFilters } from '../../features/client-dashboard/orders/order-filters'
-import { OrdersTable } from '../../features/client-dashboard/orders/orders-table'
-import { OrderStatuses } from '../../features/client-dashboard/orders/order-statuses'
-import { PaymentStatuses } from '../../features/client-dashboard/orders/payment-statuses'
-import { OrderDetails } from '../../features/client-dashboard/orders/order-details'
-import { DeliveryTracking } from '../../features/client-dashboard/orders/delivery-tracking'
-import { OrderActions } from '../../features/client-dashboard/orders/order-actions'
+import '../../../client-dashboard/styles/orders.module.css'
+import { dashboardData } from '../../data'
+import { OrderToolbar } from '../../orders/order-toolbar'
+import { OrderFilters } from '../../orders/order-filters'
+import { OrdersTable } from '../../orders/orders-table'
+import { OrderStatuses } from '../../orders/order-statuses'
+import { PaymentStatuses } from '../../orders/payment-statuses'
+import { OrderDetails } from '../../orders/order-details'
+import { DeliveryTracking } from '../../orders/delivery-tracking'
+import { OrderActions } from '../../orders/order-actions'
 
 export function OrdersPage() {
   const { orders } = dashboardData

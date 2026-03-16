@@ -1,7 +1,4 @@
-import '../Dashboard/styles/DashboardPage.module.css'
-import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-
+import { staffDashboardData } from '../../data'
 
 export function StaffDashboardPage() {
   const statsItems = staffDashboardData.overview.performanceSummary.metrics.map(m => ({
@@ -35,7 +32,7 @@ export function StaffDashboardPage() {
       </header>
 
       <section className="dashboard-grid" aria-label="Staff Dashboard Overview">
-<div className="dashboard-card glass-panel">
+        <div className="dashboard-card glass-panel">
           <h3>Stats Overview</h3>
           <div className="stats-grid">
             {statsItems.map((item, index) => (

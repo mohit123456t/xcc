@@ -1,10 +1,10 @@
-import '../../features/client-dashboard/styles/orders.module.css'
+import '../../../client-dashboard/styles/orders.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffOrdersToolbar } from '../../features/staff-dashboard/orders/staff-orders-toolbar'
-import { StaffOrdersOverview } from '../../features/staff-dashboard/orders/staff-orders-overview'
-import { StaffOrdersTable } from '../../features/staff-dashboard/orders/staff-orders-table'
-import { OrderQueuePanel } from '../../features/staff-dashboard/orders/order-queue-panel'
+import { staffDashboardData } from '../../data'
+import { StaffOrdersToolbar } from '../../orders/staff-orders-toolbar'
+import { StaffOrdersOverview } from '../../orders/staff-orders-overview'
+import { StaffOrdersTable } from '../../orders/staff-orders-table'
+import { OrderQueuePanel } from '../../orders/order-queue-panel'
 
 export function StaffOrdersPage() {
   const page = staffDashboardData.ordersPage

@@ -1,9 +1,9 @@
-import '../../features/client-dashboard/styles/marketing.module.css'
+import '../../../client-dashboard/styles/marketing.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffAnalyticsToolbar } from '../../features/staff-dashboard/analytics/staff-analytics-toolbar'
-import { AnalyticsOverviewPanel } from '../../features/staff-dashboard/analytics/analytics-overview-panel'
-import { AnalyticsMetricPanel } from '../../features/staff-dashboard/analytics/analytics-metric-panel'
+import { staffDashboardData } from '../../data'
+import { StaffAnalyticsToolbar } from '../../analytics/staff-analytics-toolbar'
+import { AnalyticsOverviewPanel } from '../../analytics/analytics-overview-panel'
+import { AnalyticsMetricPanel } from '../../analytics/analytics-metric-panel'
 
 export function StaffAnalyticsPage() {
   const page = staffDashboardData.analyticsPage

@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/settings.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { SettingsToolbar } from '../../features/client-dashboard/settings/settings-toolbar'
-import { ProfileSettingsPanel } from '../../features/client-dashboard/settings/profile-settings-panel'
-import { BusinessInfoPanel } from '../../features/client-dashboard/settings/business-info-panel'
-import { SecurityPanel } from '../../features/client-dashboard/settings/security-panel'
-import { NotificationSettingsPanel } from '../../features/client-dashboard/settings/notification-settings-panel'
-import { PaymentBankPanel } from '../../features/client-dashboard/settings/payment-bank-panel'
-import { SocialConnectionsPanel } from '../../features/client-dashboard/settings/social-connections-panel'
-import { LogoutPanel } from '../../features/client-dashboard/settings/logout-panel'
+import '../../styles/settings.module.css'
+import { dashboardData } from '../../data'
+import { SettingsToolbar } from '../../settings/settings-toolbar'
+import { ProfileSettingsPanel } from '../../settings/profile-settings-panel'
+import { BusinessInfoPanel } from '../../settings/business-info-panel'
+import { SecurityPanel } from '../../settings/security-panel'
+import { NotificationSettingsPanel } from '../../settings/notification-settings-panel'
+import { PaymentBankPanel } from '../../settings/payment-bank-panel'
+import { SocialConnectionsPanel } from '../../settings/social-connections-panel'
+import { LogoutPanel } from '../../settings/logout-panel'
 
 export function SettingsPage() {
   const { settings } = dashboardData

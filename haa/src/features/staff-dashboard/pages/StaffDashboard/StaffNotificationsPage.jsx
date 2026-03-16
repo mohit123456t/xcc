@@ -1,8 +1,8 @@
-import '../../features/client-dashboard/styles/notifications.module.css'
+import '../../../client-dashboard/styles/notifications.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffNotificationsToolbar } from '../../features/staff-dashboard/notifications/staff-notifications-toolbar'
-import { NotificationGroupPanel } from '../../features/staff-dashboard/notifications/notification-group-panel'
+import { staffDashboardData } from '../../data'
+import { StaffNotificationsToolbar } from '../../notifications/staff-notifications-toolbar'
+import { NotificationGroupPanel } from '../../notifications/notification-group-panel'
 
 export function StaffNotificationsPage() {
   const page = staffDashboardData.staffNotificationsPage

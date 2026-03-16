@@ -1,8 +1,8 @@
-import '../StaffDashboard/StaffDashboardPage.module.css'
-import { adminPanelData } from '../../features/admin-panel/data'
-import { UsersToolbar } from '../../features/admin-panel/users/users-toolbar'
-import { UsersStatStrip } from '../../features/admin-panel/users/users-stat-strip'
-import { UsersTable } from '../../features/admin-panel/users/users-table'
+import '../../../staff-dashboard/pages/StaffDashboard/StaffDashboardPage.module.css'
+import { adminPanelData } from '../../data'
+import { UsersToolbar } from '../../users/users-toolbar'
+import { UsersStatStrip } from '../../users/users-stat-strip'
+import { UsersTable } from '../../users/users-table'
 
 export function AdminUsersPage() {
   const page = adminPanelData.usersPage

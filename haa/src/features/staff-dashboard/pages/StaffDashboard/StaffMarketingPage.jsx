@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/marketing.module.css'
+import '../../../client-dashboard/styles/marketing.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffMarketingToolbar } from '../../features/staff-dashboard/marketing/staff-marketing-toolbar'
-import { StaffMarketingOverview } from '../../features/staff-dashboard/marketing/staff-marketing-overview'
-import { CreateCampaignPanel } from '../../features/staff-dashboard/marketing/create-campaign-panel'
-import { StaffCampaignList } from '../../features/staff-dashboard/marketing/staff-campaign-list'
-import { ContentPlanningPanel } from '../../features/staff-dashboard/marketing/content-planning-panel'
-import { CampaignPerformancePanel } from '../../features/staff-dashboard/marketing/campaign-performance-panel'
-import { UploadContentPanel } from '../../features/staff-dashboard/marketing/upload-content-panel'
+import { staffDashboardData } from '../../data'
+import { StaffMarketingToolbar } from '../../marketing/staff-marketing-toolbar'
+import { StaffMarketingOverview } from '../../marketing/staff-marketing-overview'
+import { CreateCampaignPanel } from '../../marketing/create-campaign-panel'
+import { StaffCampaignList } from '../../marketing/staff-campaign-list'
+import { ContentPlanningPanel } from '../../marketing/content-planning-panel'
+import { CampaignPerformancePanel } from '../../marketing/campaign-performance-panel'
+import { UploadContentPanel } from '../../marketing/upload-content-panel'
 
 export function StaffMarketingPage() {
   const page = staffDashboardData.marketingPage

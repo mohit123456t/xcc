@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/ads.module.css'
+import '../../../client-dashboard/styles/ads.module.css'
 import './StaffDashboardPage.module.css'
-import { staffDashboardData } from '../../features/staff-dashboard/data'
-import { StaffAdsToolbar } from '../../features/staff-dashboard/ads/staff-ads-toolbar'
-import { StaffAdsOverview } from '../../features/staff-dashboard/ads/staff-ads-overview'
-import { CreateAdCampaignPanel } from '../../features/staff-dashboard/ads/create-ad-campaign-panel'
-import { StaffAdsCampaignList } from '../../features/staff-dashboard/ads/staff-ads-campaign-list'
-import { AdsPerformancePanel } from '../../features/staff-dashboard/ads/ads-performance-panel'
-import { AdCreativesPanel } from '../../features/staff-dashboard/ads/ad-creatives-panel'
-import { CampaignControlsPanel } from '../../features/staff-dashboard/ads/campaign-controls-panel'
+import { staffDashboardData } from '../../data'
+import { StaffAdsToolbar } from '../../ads/staff-ads-toolbar'
+import { StaffAdsOverview } from '../../ads/staff-ads-overview'
+import { CreateAdCampaignPanel } from '../../ads/create-ad-campaign-panel'
+import { StaffAdsCampaignList } from '../../ads/staff-ads-campaign-list'
+import { AdsPerformancePanel } from '../../ads/ads-performance-panel'
+import { AdCreativesPanel } from '../../ads/ad-creatives-panel'
+import { CampaignControlsPanel } from '../../ads/campaign-controls-panel'
 
 export function StaffAdsPage() {
   const page = staffDashboardData.adsPage

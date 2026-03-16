@@ -1,12 +1,12 @@
-import '../../features/client-dashboard/styles/billing.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { BillingToolbar } from '../../features/client-dashboard/billing/billing-toolbar'
-import { CurrentPlanPanel } from '../../features/client-dashboard/billing/current-plan-panel'
-import { ChangePlanPanel } from '../../features/client-dashboard/billing/change-plan-panel'
-import { PaymentMethodPanel } from '../../features/client-dashboard/billing/payment-method-panel'
-import { BillingHistoryTable } from '../../features/client-dashboard/billing/billing-history-table'
-import { DownloadInvoicePanel } from '../../features/client-dashboard/billing/download-invoice-panel'
-import { AutoPaymentPanel } from '../../features/client-dashboard/billing/auto-payment-panel'
+import '../../../client-dashboard/styles/billing.module.css'
+import { dashboardData } from '../../data'
+import { BillingToolbar } from '../../billing/billing-toolbar'
+import { CurrentPlanPanel } from '../../billing/current-plan-panel'
+import { ChangePlanPanel } from '../../billing/change-plan-panel'
+import { PaymentMethodPanel } from '../../billing/payment-method-panel'
+import { BillingHistoryTable } from '../../billing/billing-history-table'
+import { DownloadInvoicePanel } from '../../billing/download-invoice-panel'
+import { AutoPaymentPanel } from '../../billing/auto-payment-panel'
 
 export function BillingPage() {
   const { billing } = dashboardData

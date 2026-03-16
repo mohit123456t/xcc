@@ -1,9 +1,9 @@
-import '../../features/client-dashboard/styles/social-media.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { SocialMediaToolbar } from '../../features/client-dashboard/social-media/social-media-toolbar'
-import { SocialMediaOverview } from '../../features/client-dashboard/social-media/social-media-overview'
-import { SocialPostsPanel } from '../../features/client-dashboard/social-media/social-posts-panel'
-import { SocialAnalyticsPanel } from '../../features/client-dashboard/social-media/social-analytics-panel'
+import '../../../client-dashboard/styles/social-media.module.css'
+import { dashboardData } from '../../data'
+import { SocialMediaToolbar } from '../../social-media/social-media-toolbar'
+import { SocialMediaOverview } from '../../social-media/social-media-overview'
+import { SocialPostsPanel } from '../../social-media/social-posts-panel'
+import { SocialAnalyticsPanel } from '../../social-media/social-analytics-panel'
 
 export function SocialMediaPage() {
   const { socialMedia } = dashboardData

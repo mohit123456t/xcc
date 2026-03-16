@@ -1,13 +1,13 @@
-import '../../features/client-dashboard/styles/marketing.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { MarketingToolbar } from '../../features/client-dashboard/marketing/marketing-toolbar'
-import { CampaignOverview } from '../../features/client-dashboard/marketing/campaign-overview'
-import { CampaignList } from '../../features/client-dashboard/marketing/campaign-list'
-import { SocialMediaMarketing } from '../../features/client-dashboard/marketing/social-media-marketing'
-import { InfluencerMarketing } from '../../features/client-dashboard/marketing/influencer-marketing'
-import { MarketingAdsPerformance } from '../../features/client-dashboard/marketing/marketing-ads-performance'
-import { MarketingAnalytics } from '../../features/client-dashboard/marketing/marketing-analytics'
-import { ContentSection } from '../../features/client-dashboard/marketing/content-section'
+import '../../../client-dashboard/styles/marketing.module.css'
+import { dashboardData } from '../../data'
+import { MarketingToolbar } from '../../marketing/marketing-toolbar'
+import { CampaignOverview } from '../../marketing/campaign-overview'
+import { CampaignList } from '../../marketing/campaign-list'
+import { SocialMediaMarketing } from '../../marketing/social-media-marketing'
+import { InfluencerMarketing } from '../../marketing/influencer-marketing'
+import { MarketingAdsPerformance } from '../../marketing/marketing-ads-performance'
+import { MarketingAnalytics } from '../../marketing/marketing-analytics'
+import { ContentSection } from '../../marketing/content-section'
 
 export function MarketingPage() {
   const { marketing } = dashboardData

@@ -1,12 +1,12 @@
-import '../../features/client-dashboard/styles/products.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
-import { ProductToolbar } from '../../features/client-dashboard/products/product-toolbar'
-import { ProductFilters } from '../../features/client-dashboard/products/product-filters'
-import { ProductTable } from '../../features/client-dashboard/products/product-table'
-import { AddProductForm } from '../../features/client-dashboard/products/add-product-form'
-import { ProductMedia } from '../../features/client-dashboard/products/product-media'
-import { InventoryPanel } from '../../features/client-dashboard/products/inventory-panel'
-import { ProductPerformance } from '../../features/client-dashboard/products/product-performance'
+import '../../../client-dashboard/styles/products.module.css'
+import { dashboardData } from '../../data'
+import { ProductToolbar } from '../../products/product-toolbar'
+import { ProductFilters } from '../../products/product-filters'
+import { ProductTable } from '../../products/product-table'
+import { AddProductForm } from '../../products/add-product-form'
+import { ProductMedia } from '../../products/product-media'
+import { InventoryPanel } from '../../products/inventory-panel'
+import { ProductPerformance } from '../../products/product-performance'
 
 export function ProductsPage() {
   const { products } = dashboardData

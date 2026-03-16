@@ -1,8 +1,8 @@
-import '../StaffDashboard/StaffDashboardPage.module.css'
-import { adminPanelData } from '../../features/admin-panel/data'
-import { BusinessesToolbar } from '../../features/admin-panel/businesses/businesses-toolbar'
-import { BusinessesStatStrip } from '../../features/admin-panel/businesses/businesses-stat-strip'
-import { BusinessesTable } from '../../features/admin-panel/businesses/businesses-table'
+import '../../../staff-dashboard/pages/StaffDashboard/StaffDashboardPage.module.css'
+import { adminPanelData } from '../../data'
+import { BusinessesToolbar } from '../../businesses/businesses-toolbar'
+import { BusinessesStatStrip } from '../../businesses/businesses-stat-strip'
+import { BusinessesTable } from '../../businesses/businesses-table'
 
 export function AdminBusinessesPage() {
   const page = adminPanelData.businessesPage
