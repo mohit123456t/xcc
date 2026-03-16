@@ -1,0 +1,28 @@
+:global(.billing-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.billing-main-column),
+:global(.billing-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.billing-main-column > .dashboard-card),
+:global(.billing-side-column > .dashboard-card),
+:global(.billing-main-column > .dashboard-card-wide),
+:global(.billing-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+@media (max-width: 1080px) {
+  :global(.billing-layout) {
+    grid-template-columns: 1fr;
+  }
+}

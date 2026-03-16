@@ -1,0 +1,35 @@
+:global(.marketing-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.marketing-main-column),
+:global(.marketing-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.marketing-main-column > .dashboard-card),
+:global(.marketing-side-column > .dashboard-card),
+:global(.marketing-main-column > .dashboard-card-wide),
+:global(.marketing-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+:global(.marketing-overview-grid) {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 1080px) {
+  :global(.marketing-layout),
+  :global(.marketing-overview-grid) {
+    grid-template-columns: 1fr;
+  }
+}

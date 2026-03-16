@@ -1,0 +1,36 @@
+:global(.settings-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.settings-main-column),
+:global(.settings-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.settings-main-column > .dashboard-card),
+:global(.settings-side-column > .dashboard-card),
+:global(.settings-main-column > .dashboard-card-wide),
+:global(.settings-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+:global(.settings-action-row) {
+  margin-top: 18px;
+}
+
+:global(.settings-logout-button) {
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  :global(.settings-layout) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,32 @@
+:global(.support-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.support-main-column),
+:global(.support-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.support-main-column > .dashboard-card),
+:global(.support-side-column > .dashboard-card),
+:global(.support-main-column > .dashboard-card-wide),
+:global(.support-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+:global(.support-submit-row) {
+  margin-top: 18px;
+}
+
+@media (max-width: 1080px) {
+  :global(.support-layout) {
+    grid-template-columns: 1fr;
+  }
+}

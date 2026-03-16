@@ -1,0 +1,64 @@
+:root {
+  font-family: 'Segoe UI', sans-serif;
+  color: #213042;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.2), transparent 18%),
+    radial-gradient(circle at 85% 8%, rgba(230, 238, 248, 0.22), transparent 16%),
+    linear-gradient(180deg, #cfd7e0 0%, #c2ccd7 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(246, 249, 252, 0.2), transparent 17%),
+    radial-gradient(circle at 82% 6%, rgba(233, 241, 248, 0.16), transparent 14%),
+    radial-gradient(circle at 50% 100%, rgba(190, 201, 214, 0.26), transparent 34%),
+    linear-gradient(180deg, #ccd4dd 0%, #bec8d3 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 28%, transparent 70%, rgba(255, 255, 255, 0.05)),
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.1), transparent 16%),
+    radial-gradient(circle at 78% 16%, rgba(255, 255, 255, 0.08), transparent 14%);
+  backdrop-filter: blur(10px) saturate(110%);
+  -webkit-backdrop-filter: blur(10px) saturate(110%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(255, 255, 255, 0.1), transparent 18%),
+    radial-gradient(circle at 84% 4%, rgba(224, 233, 242, 0.12), transparent 16%),
+    linear-gradient(180deg, rgba(210, 219, 229, 0.24), rgba(195, 206, 219, 0.14));
+}

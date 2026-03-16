@@ -1,0 +1,125 @@
+:global(.notifications-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.notifications-main-column),
+:global(.notifications-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.notifications-main-column > .dashboard-card),
+:global(.notifications-side-column > .dashboard-card),
+:global(.notifications-main-column > .dashboard-card-wide),
+:global(.notifications-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+:global(.notifications-toolbar-actions) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+:global(.notifications-unread-pill) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--dashboard-text);
+}
+
+:global(.notifications-unread-pill span) {
+  color: var(--dashboard-muted);
+}
+
+:global(.notification-feed) {
+  display: grid;
+  gap: 12px;
+}
+
+:global(.notification-item) {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+:global(.notification-item.is-unread) {
+  background: rgba(255, 255, 255, 0.48);
+  border-color: rgba(79, 124, 255, 0.22);
+  box-shadow: inset 3px 0 0 rgba(79, 124, 255, 0.65);
+}
+
+:global(.notification-item-top) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+:global(.notification-badge) {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+:global(.notification-badge-orders) {
+  background: rgba(79, 124, 255, 0.14);
+  color: #3556ba;
+}
+
+:global(.notification-badge-marketing) {
+  background: rgba(255, 176, 32, 0.16);
+  color: #9c6800;
+}
+
+:global(.notification-badge-ads) {
+  background: rgba(32, 188, 110, 0.14);
+  color: #137245;
+}
+
+:global(.notification-badge-billing) {
+  background: rgba(147, 93, 255, 0.14);
+  color: #6945b5;
+}
+
+:global(.notification-badge-delivery) {
+  background: rgba(50, 165, 204, 0.14);
+  color: #256c82;
+}
+
+:global(.notification-badge-support) {
+  background: rgba(228, 76, 76, 0.14);
+  color: #a13a3a;
+}
+
+:global(.notification-time) {
+  color: var(--dashboard-muted);
+  font-size: 0.82rem;
+}
+
+:global(.notification-item p) {
+  margin: 0;
+  color: var(--dashboard-text);
+  line-height: 1.5;
+}
+
+@media (max-width: 1080px) {
+  :global(.notifications-layout) {
+    grid-template-columns: 1fr;
+  }
+}

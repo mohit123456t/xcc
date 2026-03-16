@@ -1,0 +1,53 @@
+:global(.delivery-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+:global(.delivery-main-column),
+:global(.delivery-side-column) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+:global(.delivery-main-column > .dashboard-card),
+:global(.delivery-side-column > .dashboard-card),
+:global(.delivery-main-column > .dashboard-card-wide),
+:global(.delivery-side-column > .dashboard-card-wide) {
+  flex: 0 0 auto;
+  width: 100%;
+  grid-column: auto;
+}
+
+:global(.tracking-flow) {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+:global(.tracking-step) {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+:global(.tracking-arrow) {
+  color: var(--dashboard-accent);
+  font-weight: 700;
+}
+
+:global(.delivery-ship-button) {
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  :global(.delivery-layout) {
+    grid-template-columns: 1fr;
+  }
+}

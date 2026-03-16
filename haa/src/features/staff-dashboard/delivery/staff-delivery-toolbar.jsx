@@ -1,0 +1,15 @@
+export function StaffDeliveryToolbar({ header }) {
+  return (
+    <div className="page-toolbar">
+      <div>
+        <p className="page-eyebrow">Staff Delivery</p>
+        <h2>{header.title}</h2>
+        <p className="page-copy">{header.description}</p>
+      </div>
+
+      <button type="button" className="primary-action-button">
+        + Ship with Shiprocket
+      </button>
+    </div>
+  )
+}
