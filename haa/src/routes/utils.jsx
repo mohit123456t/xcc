@@ -1,7 +1,7 @@
 export function getDashboardPageTitle(
   pathname,
   basePath = '/dashboard',
-  pages = [], // Will import from pages.js where needed
+  pages = [], // Will import from pages.jsx where needed
 ) {
   const normalizedPath =
     pathname === basePath ? '' : pathname.replace(`${basePath}/`, '')

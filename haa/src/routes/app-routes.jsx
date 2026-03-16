@@ -5,12 +5,12 @@ import {
   dashboardPages, 
   staffDashboardPages, 
   adminPanelPages 
-} from './pages.js'
+} from './pages.jsx'
 import { 
   dashboardNavigationItems,
   staffDashboardNavigationItems,
   adminPanelNavigationItems 
-} from './navigation.js'
+} from './navigation.jsx'
 
 export const appRoutes = [
   {

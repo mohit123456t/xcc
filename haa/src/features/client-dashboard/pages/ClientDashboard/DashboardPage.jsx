@@ -1,5 +1,5 @@
-import './styles/DashboardPage.module.css'
-import { dashboardData } from '../../features/client-dashboard/data'
+import './DashboardPage.module.css'
+import { dashboardData } from '../../data'
 
 
 export function DashboardPage() {
